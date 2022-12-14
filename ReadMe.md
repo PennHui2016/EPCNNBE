@@ -38,16 +38,17 @@ python EPCNNBE_web.py be_type fasta_file_path expect_outcome_sequence
 
 where, three parameters are request including be_type fasta_file_path expect_outcome_sequence:
 
-be_type --- string, specify the base editor type, 'abe' and 'cbe' are supported
+1. be_type --- string, specify the base editor type, 'abe' and 'cbe' are supported
 
-fasta_file_path --- string, specify the fasta file containing the DNA sequence to be edited by a base editor. An example file see 'test_seq_SOD1.fa'. The DNA sequence should be no less than 30nt.
+2. fasta_file_path --- string, specify the fasta file containing the DNA sequence to be edited by a base editor. An example file see 'test_seq_SOD1.fa'. The DNA sequence should be no less than 30nt.
 
-expect_outcome_sequence --- string, specify the expected outcome sequence. This parameter is optional, only filled if users expect to choose the best protospacer for editing the DNA and get the given expected outcome sequence. 
+3. expect_outcome_sequence --- string, specify the expected outcome sequence. This parameter is optional, only filled if users expect to choose the best protospacer for editing the DNA and get the given expected outcome sequence. 
 
 An example command:
 
     python EPCNNBE_web.py 'abe' test_seq_SOD1.fa 			
 
+## Contact
 Any problems or requesting source codes for reproducing results in our paper please contact 
     Hui Peng: hui.peng@ntu.edu.sg or cdph2009@163.com
 
